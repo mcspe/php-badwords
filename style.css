@@ -1,0 +1,34 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background: rgba(155, 6, 11, .6);
+}
+
+/* HEADER */
+  header div {
+    height: 6rem;
+    padding: 1rem;
+  }
+  header div img {
+    height: 100%;
+    object-fit: cover;
+  }
+/* /HEADER */
+/* MAIN */
+  .ms-wrapper button {
+    width: 25%;
+    margin: 3rem auto;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    background: whitesmoke;
+    color: darkslategrey;
+    border: none;
+    border-radius: 1.5rem;
+    transition: all .5s ease-out;
+  }
+  .ms-wrapper button:hover {
+    background: none;
+    box-shadow: inset 0 0 5px darkslategrey;
+    color: whitesmoke;
+    transition: all .5s ease-out;
+  }
+/* /MAIN */
