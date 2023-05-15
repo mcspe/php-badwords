@@ -35,7 +35,7 @@
   <main>
     <div class="container my-3 text-center">
       <div class="ms-wrapper my-5">
-      <div class="row align-items-center gap-5">
+      <div class="row gap-5">
         <div class="ms-given-text col text-justify">
           <h3>Here's the <em>dirty</em> text, with
             <?php
