@@ -3,6 +3,7 @@
   $dirtyWord = $_POST['dirtyWord'];
   // var_dump($dirtyText);
   $cleanText = str_replace($dirtyWord, "***", $dirtyText);
+  $cleanText = str_replace(ucfirst($dirtyWord), "***", $cleanText);
 ?>
 
 <!DOCTYPE html>
