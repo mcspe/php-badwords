@@ -32,7 +32,7 @@
     </div>
   </header>
   <main>
-    <div class="container my-5 text-center">
+    <div class="container my-3 text-center">
       <div class="ms-wrapper my-5">
       <div class="row align-items-center gap-5">
         <div class="ms-given-text col text-justify">
@@ -73,6 +73,14 @@
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer>
+    <div class="container-fluid py-3 text-center">
+      <p>
+        &copy;
+        <a class="link mx-1" href="https://github.com/mcspe">@mcspe</a>
+        <span>All Rights Reserved</span>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
