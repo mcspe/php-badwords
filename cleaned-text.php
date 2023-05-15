@@ -1,5 +1,8 @@
 <?php
-
+  $dirtyText = $_POST['dirtyText'];
+  $dirtyWord = $_POST['dirtyWord'];
+  // var_dump($dirtyText);
+  $cleanText = str_replace($dirtyWord, "***", $dirtyText);
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +35,40 @@
     <div class="container my-5 text-center">
       <h3>Here's your cleaned text!</h3>
       <div class="ms-wrapper my-5">
-        
+        <div class="ms-given-text p-5 text-justify">
+          <h5>Here's the <em>dirty</em> text, with
+            <?php
+              echo str_word_count($dirtyText)
+            ?>
+             words and 
+            <?php
+              echo strlen($dirtyText)
+            ?>
+             characters long.
+          </h5>
+          <p class="ms-paragrph m-3 p-3">
+            <?php
+              echo $dirtyText
+            ?>
+          </p>
+        </div>
+        <div class="ms-clean-text p-5 text-justify">
+          <h5>Here's the <em>clean</em> text, with 
+            <?php
+              echo str_word_count($cleanText)
+            ?>
+             words and 
+            <?php
+              echo strlen($cleanText)
+            ?>
+             characters long.
+          </h5>
+          <p class="ms-paragrph m-3 p-3">
+            <?php
+              echo $cleanText
+            ?>
+          </p>
+        </div>
       </div>
     </div>
   </main>

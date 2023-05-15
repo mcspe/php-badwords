@@ -31,4 +31,11 @@ body {
     color: whitesmoke;
     transition: all .5s ease-out;
   }
+  .ms-wrapper .ms-paragrph {
+    border: 1px solid black;
+    background: rgb(220, 220, 220);
+    color: rgba(0, 0, 0, .6);
+    font-size: .8rem;
+    font-style: italic;
+  }
 /* /MAIN */
