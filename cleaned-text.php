@@ -33,10 +33,10 @@
   </header>
   <main>
     <div class="container my-5 text-center">
-      <h3>Here's your cleaned text!</h3>
       <div class="ms-wrapper my-5">
-        <div class="ms-given-text p-5 text-justify">
-          <h5>Here's the <em>dirty</em> text, with
+      <div class="row align-items-center gap-5">
+        <div class="ms-given-text col text-justify">
+          <h3>Here's the <em>dirty</em> text, with
             <?php
               echo str_word_count($dirtyText)
             ?>
@@ -45,15 +45,15 @@
               echo strlen($dirtyText)
             ?>
              characters long.
-          </h5>
-          <p class="ms-paragrph m-3 p-3">
+          </h3>
+          <p class="ms-paragrph m-3 p-4">
             <?php
               echo $dirtyText
             ?>
           </p>
         </div>
-        <div class="ms-clean-text p-5 text-justify">
-          <h5>Here's the <em>clean</em> text, with 
+        <div class="ms-clean-text col text-justify">
+          <h3>Here's the <em>clean</em> text, with 
             <?php
               echo str_word_count($cleanText)
             ?>
@@ -62,13 +62,14 @@
               echo strlen($cleanText)
             ?>
              characters long.
-          </h5>
-          <p class="ms-paragrph m-3 p-3">
+          </h3>
+          <p class="ms-paragrph m-3 p-4">
             <?php
               echo $cleanText
             ?>
           </p>
         </div>
+      </div>
       </div>
     </div>
   </main>
